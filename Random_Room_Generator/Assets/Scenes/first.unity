@@ -253,9 +253,9 @@ MonoBehaviour:
   - {fileID: 3739077363414083951, guid: 54f4519428c586849b22892a8fef1fad, type: 3}
   - {fileID: 5039082049488848932, guid: 5a9de17313514c64faaadb1b67c2d84a, type: 3}
   - {fileID: 7303790741350075243, guid: b9a407e8928672948ab0221385c3b949, type: 3}
-  closedRooms: {fileID: 9005726361222196485, guid: 028139b2bbe1566419ea4b2afbeca127, type: 3}
+  closedRoom: {fileID: 9005726361222196485, guid: 028139b2bbe1566419ea4b2afbeca127, type: 3}
   rooms: []
-  waitTime: 2
+  waitTime: 4
   boss: {fileID: 1404385037535522978, guid: 110eaa287af9f224ca9992f4e2e33e39, type: 3}
 --- !u!4 &1392515877
 Transform:
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638546873}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8027f1696f93e7d49acfdd86e8b11ebe, type: 3}
   m_Name: 
@@ -291,6 +291,18 @@ MonoBehaviour:
   openingDirection: 0
   spwaned: 1
   waitTime: 4
+--- !u!114 &1638546878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638546873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7841ac203d89a3149a8626a1071abf4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1784954951079894846
 PrefabInstance:
   m_ObjectHideFlags: 0

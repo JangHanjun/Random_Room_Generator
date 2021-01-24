@@ -8,7 +8,7 @@ public class RoomTemplate : MonoBehaviour
     public GameObject[] topRooms;
     public GameObject[] leftRooms;
     public GameObject[] rightRooms;
-    public GameObject closedRooms;
+    public GameObject closedRoom;
     // 생성되는 방들을 배열에 저장
     public List<GameObject> rooms;
     public float waitTime;
@@ -17,12 +17,7 @@ public class RoomTemplate : MonoBehaviour
 
     private void Update() {
         if(waitTime <= 0 && spawnedBoss == false){
-            for(int i = 0; i < rooms.Count; i++){
-                if(i == rooms.Count -1){
-                    Instantiate(boss, rooms[i].transform.position, Quaternion.identity);
-                    spawnedBoss = true;
-                }
-            }
+            Instantiate(boss, rooms[rooms.Count-1].transform.position, Quaternion.identity);
         } else {
             waitTime -= Time.deltaTime;
         }
