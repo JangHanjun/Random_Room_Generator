@@ -15509,10 +15509,16 @@ MonoBehaviour:
   rooms:
   - {fileID: 6239932509253409040, guid: dcd0b024ac477ac4dac7985556e7b419, type: 3}
   - {fileID: 7006191458127401184, guid: e56a06cac5e9eb543a1d1b1ab360fe31, type: 3}
-  - {fileID: 7226620861016105309, guid: 768991c94d454794f9b50e4358a2501d, type: 3}
   - {fileID: 5008709321063708039, guid: 346594db78dceb34aa99801d80f10505, type: 3}
+  - {fileID: 7226620861016105309, guid: 768991c94d454794f9b50e4358a2501d, type: 3}
   moveAmount: 7
   startTimeBtwRoom: 0.25
+  minX: -10.5
+  maxX: 10.5
+  minY: -10.5
+  room:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!4 &1333491918
 Transform:
   m_ObjectHideFlags: 0
