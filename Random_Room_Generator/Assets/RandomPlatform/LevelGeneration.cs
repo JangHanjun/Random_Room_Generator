@@ -81,7 +81,7 @@ public class LevelGeneration : MonoBehaviour
             downCounter++;
 
             if(transform.position.y > minY){
-                Collider2D roomDetection = Physics2D.OverlapCircle(transform.position, 1, room);
+                Collider2D roomDetection = Physics2D.OverlapCircle(transform.position, 1, room);    // 위에 방이 있는가?
                 if(roomDetection.GetComponent<RoomType>().type != 1 && roomDetection.GetComponent<RoomType>().type != 3){
                     
                     if(downCounter >= 2){
